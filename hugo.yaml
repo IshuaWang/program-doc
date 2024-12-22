@@ -1,6 +1,7 @@
 # Hugo configuration file
 title: My Site
-
+trailingSlash: false
+uglyURLs: true
 # import hextra as module
 module:
   imports:
