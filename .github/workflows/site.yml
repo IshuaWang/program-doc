@@ -31,7 +31,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.140.0
+      HUGO_VERSION: 0.137.4
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -56,7 +56,7 @@ jobs:
           HUGO_ENV: production
         run: |
           hugo \
-            --gc  \
+            --gc --minify \
             --baseURL "https://blog.wangyx.com/sites/program/"
       - name: Deploy to Halo
         run: |
