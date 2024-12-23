@@ -56,7 +56,7 @@ jobs:
           HUGO_ENV: production
         run: |
           hugo \
-            --gc --minify \
+            --gc  \
             --baseURL "https://blog.wangyx.com/sites/program/"
       - name: Deploy to Halo
         run: |
